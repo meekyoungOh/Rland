@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <section>
+        <h1>회원가입</h1>
+        <form action="signup"> <!-- 백엔드에서 signup이란 프로그램 구현하면 그 프로그램과 연결 -->
+            <fieldset>
+                <legend>회원가입 정보</legend>
+                <div>
+                    <label for="uid">아이디</label>
+                    <input id="uid" name="uid">
+                    <output>유효한 아이디 입니다.</output>
+                </div>
+                
+                <div>
+                    <label>이메일</label>
+                    <input name="email">
+                    <output>유효한 아이디 입니다.</output>
+                </div>
+                
+                <div>
+                    <label>비밀번호</label>
+                    <input name="pwd">
+                    <output>유효한 아이디 입니다.</output>
+                </div>
+                
+                <div>
+                    <label>비밀번호 확인</label>
+                    <input>
+                    <output>유효한 아이디 입니다.</output>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>가장 좋아하는 취미</legend>
+                <input type="radio" id="reading" name="hb">
+                <label for="reading">독서</label>
+                <input type="radio" id="climbing" name="hb">
+                <label for="climbing">등산</label>
+                <input type="radio" id="watchingfb" name="hb">
+                <label for="watchingfb">축구시청</label>
+            </fieldset>
+
+            <input type="submit" value="회원가입"> <!-- 제출을 유발하는 액션 -->
+        </form>
+    </section>
+</body>
+
+</html>
