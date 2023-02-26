@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <section>
+        <h1>회원가입</h1>
+        <form action="signup"> <!-- 백엔드에서 signup이란 프로그램 구현하면 그 프로그램과 연결 -->
+            <fieldset>
+                <legend>회원가입 정보</legend>
+                <div>
+                    <label for="uid">아이디</label>
+                    <input id="uid" name="uid" required placeholder="영문 6자 이상 입력" autofocus autocomplete="off">
+                    <output>유효한 아이디 입니다.</output>
+                </div>
+
+                <div>
+                    <label for="uid">나이</label>
+                    <input id="uid" name="age" required type="number" min="10" max="200">
+                </div>
+                
+                <div>
+                    <label>전화번호</label>
+                    <input name="phone" required placeholder="대시(-)포함 : 010-1234-5678" pattern="01[01689]-\d{3,4}-\d{4}">
+                </div>
+                
+                <div>
+                    <label>이메일</label>
+                    <input name="email">
+                </div>
+                
+                <div>
+                    <label>비밀번호</label>
+                    <input name="pwd">
+                    <output>유효한 아이디 입니다.</output>
+                </div>
+                
+                <div>
+                    <label>비밀번호 확인</label>
+                    <input>
+                    <output>유효한 아이디 입니다.</output>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>가장 좋아하는 취미</legend>
+                <input type="radio" id="reading" name="hb" value="독서">
+                <label for="reading">독서</label>
+                <input type="radio" id="climbing" name="hb">
+                <label for="climbing">등산</label>
+                <input type="radio" id="watchingfb" name="hb">
+                <label for="watchingfb">축구시청</label>
+
+                <select name="chb">
+                    <option>선택</option>
+                    <option value="1">독서</option>
+                    <option value="2">등산</option>
+                    <option value="3">축구시청</option>
+                </select>
+                <input type="text" name="hb2" list="hb2-list">
+                <datalist id="hb2-list">
+                    <option value="여행">
+                    <option value="여의봉가지고놀기">
+                    <option value="여의도한강공원돌기">
+                    <option value="여의도한강에서치맥먹기">
+                </datalist>
+            </fieldset>
+
+            <fieldset>
+                <legend>좋아하는 취미</legend>
+                <input type="checkbox" id="reading" name="hb" value="1">
+                <label for="reading">독서</label>
+                <input type="checkbox" id="climbing" name="hb" value="2">
+                <label for="climbing">등산</label>
+                <input type="checkbox" id="watchingfb" name="hb" value="3">
+                <label for="watchingfb">축구시청</label>
+
+                <select multiple name="chb1">
+                    <option>선택</option>
+                    <option value="1">독서</option>
+                    <option value="2">등산</option>
+                    <option value="3">축구시청</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>HTML5에서 새로 추가된 입력 컨트롤들</legend>
+                <label>가입일</label>
+                <input type="date" name="" id="">
+                <label>색상</label>
+                <input type="color" name="" id="">
+                <label>볼륨</label>
+                <input type="range" name="" id="" min="0" max="100" value="30">
+            </fieldset>
+
+            <div>
+                <input type="submit" value="회원가입"> <!-- 제출을 유발하는 액션 -->
+                <input type="button" value="회원가입"> <!-- 제출 안 함. 모양이 버튼일 뿐 -->
+                <button><img src="/images/8-1.jpg"></button> <!-- 텍스트가 아닌 이미지나 다양한 태그의 조합으로 버튼을 꾸밀 수 있다 -->
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
