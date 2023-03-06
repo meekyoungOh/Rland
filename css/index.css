@@ -1,0 +1,13 @@
+@import url(style.css);
+
+h1[lang="ko"] {
+	color: aqua;
+}
+
+h1.cafe {
+	color: green;
+}
+
+#h1 {
+	color: red;
+}
